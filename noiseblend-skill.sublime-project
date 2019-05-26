@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"folder_include_patterns": [
+				".ask",
+				"models",
+				"hooks",
+				"lambda",
+				"us-east-1_play_blend",
+				"noiseblend",
+				"isps",
+				"isps/entitlement"
+			],
+			"file_exclude_patterns": ["first.py", "six.py", "stringcase.py", "easy_install.py", "typing.py"],
+			"folder_exclude_patterns": ["*.egg-info", "*.dist-info", "__pycache__", ".pytest_cache"],
+			"path": "."
+		}
+	]
+}

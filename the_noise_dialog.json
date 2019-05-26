@@ -1,0 +1,22 @@
+{
+    "skillId": "amzn1.ask.skill.778ceabb-38ef-47d5-8927-f57cff77bf2d",
+    "locale": "en-US",
+    "type": "text",
+    "userInput": [
+        "tell noiseblend to play my morning blend",
+        "tell noiseblend to change the acousticness to zero",
+        "tell noiseblend to give me some rap",
+        "tell noiseblend to make it less intense",
+        "tell noiseblend to drop the liveness",
+        "tell noiseblend to make it gloomy",
+        "tell noiseblend to reset the acousticness",
+        "ask noiseblend what's the tuning",
+        "tell noiseblend to reset the tuning",
+        "tell noiseblend to play something at ten percent",
+        "tell noiseblend to set the volume to two and play something based on adele and jesse cook",
+        "tell noiseblend to play rainy day genre radio",
+        "tell noiseblend to play something similar to magic by coldplay",
+        "tell noiseblend to i hate florin salam",
+        "tell noiseblend to fade the music down until five percent in one minute"
+    ]
+}

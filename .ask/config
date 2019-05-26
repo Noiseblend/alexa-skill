@@ -1,0 +1,49 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.778ceabb-38ef-47d5-8927-f57cff77bf2d",
+      "was_cloned": false,
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "d1ad5f167432da6123cb9ba7cebbbfb7"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "769065224ddb60d19ce6f8cf7686a7b5"
+          },
+          "en-GB": {
+            "eTag": "769065224ddb60d19ce6f8cf7686a7b5"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/EU"
+            ],
+            "arn": "arn:aws:lambda:eu-west-1:699773810175:function:play_blend",
+            "awsRegion": "eu-west-1",
+            "codeUri": "lambda/us-east-1_play_blend",
+            "functionName": "play_blend",
+            "handler": "blend.handler",
+            "revisionId": "e9262689-61eb-458d-be68-30fb753e971a",
+            "runtime": "python3.6"
+          },
+          {
+            "alexaUsage": [
+              "custom/default",
+              "custom/NA"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:699773810175:function:play_blend",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/us-east-1_play_blend",
+            "functionName": "play_blend",
+            "handler": "blend.handler",
+            "revisionId": "ecd6cfa0-d986-409f-9be0-c70c197c1cb5",
+            "runtime": "python3.6"
+          }
+        ]
+      }
+    }
+  }
+}

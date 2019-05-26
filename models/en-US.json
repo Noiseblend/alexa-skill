@@ -1,0 +1,2067 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "noise blend",
+      "intents": [
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "PlayBlendIntent",
+          "slots": [
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "volume_percent",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "blend",
+              "type": "BLEND",
+              "samples": [
+                "Play my {blend} blend",
+                "Play my {blend}",
+                "Play some {blend} music",
+                "Play some {blend}",
+                "Play {blend}",
+                "{blend} Blend",
+                "{blend}"
+              ]
+            },
+            {
+              "name": "device",
+              "type": "DEVICE_NAME"
+            }
+          ],
+          "samples": [
+            "Play music for the {blend} at {volume_percent} percent volume",
+            "Play music for the {blend} at {volume_percent} percent",
+            "Play music for the {blend}",
+            "Play music for {blend} at {volume_percent} percent volume",
+            "Play music for {blend} at {volume_percent} percent",
+            "Play music for {blend}",
+            "Play my {blend} Blend at {volume_percent} percent volume",
+            "Play my {blend} Blend at {volume_percent} percent",
+            "Play my {blend} Blend on {device} at {volume_percent} percent volume",
+            "Play my {blend} Blend on {device} at {volume_percent} percent",
+            "Play my {blend} Blend on {device}",
+            "Play my {blend} Blend",
+            "Play some music for {blend} at {volume_percent} percent volume",
+            "Play some music for {blend} at {volume_percent} percent",
+            "Play some music for {blend}",
+            "Play some {blend} at {volume_percent} percent volume",
+            "Play some {blend} at {volume_percent} percent",
+            "Play some {blend} music at {volume_percent} percent volume",
+            "Play some {blend} music at {volume_percent} percent",
+            "Play some {blend} music on {device} at {volume_percent} percent volume",
+            "Play some {blend} music on {device} at {volume_percent} percent",
+            "Play some {blend} music on {device}",
+            "Play some {blend} music",
+            "Play some {blend} on {device} at {volume_percent} percent volume",
+            "Play some {blend} on {device} at {volume_percent} percent",
+            "Play some {blend} on {device}",
+            "Play some {blend}",
+            "Play {blend} at {volume_percent} percent volume",
+            "Play {blend} at {volume_percent} percent",
+            "Play {blend} Blend at {volume_percent} percent volume",
+            "Play {blend} Blend at {volume_percent} percent",
+            "Play {blend} Blend on {device} at {volume_percent} percent volume",
+            "Play {blend} Blend on {device} at {volume_percent} percent",
+            "Play {blend} Blend on {device}",
+            "Play {blend} Blend",
+            "Play {blend} on {device} at {volume_percent} percent volume",
+            "Play {blend} on {device} at {volume_percent} percent",
+            "Play {blend} on {device}",
+            "Play {blend}",
+            "Set volume to {volume_percent} percent and play music for the {blend}",
+            "Set volume to {volume_percent} percent and play music for {blend}",
+            "Set volume to {volume_percent} percent and play my {blend} Blend on {device}",
+            "Set volume to {volume_percent} percent and play my {blend} Blend",
+            "Set volume to {volume_percent} percent and play some music for {blend}",
+            "Set volume to {volume_percent} percent and play some {blend} music on {device}",
+            "Set volume to {volume_percent} percent and play some {blend} music",
+            "Set volume to {volume_percent} percent and play some {blend} on {device}",
+            "Set volume to {volume_percent} percent and play some {blend}",
+            "Set volume to {volume_percent} percent and play {blend} Blend on {device}",
+            "Set volume to {volume_percent} percent and play {blend} Blend",
+            "Set volume to {volume_percent} percent and play {blend} on {device}",
+            "Set volume to {volume_percent} percent and play {blend}",
+            "Set volume to {volume} and play music for the {blend}",
+            "Set volume to {volume} and play music for {blend}",
+            "Set volume to {volume} and play my {blend} Blend on {device}",
+            "Set volume to {volume} and play my {blend} Blend",
+            "Set volume to {volume} and play some music for {blend}",
+            "Set volume to {volume} and play some {blend} music on {device}",
+            "Set volume to {volume} and play some {blend} music",
+            "Set volume to {volume} and play some {blend} on {device}",
+            "Set volume to {volume} and play some {blend}",
+            "Set volume to {volume} and play {blend} Blend on {device}",
+            "Set volume to {volume} and play {blend} Blend",
+            "Set volume to {volume} and play {blend} on {device}",
+            "Set volume to {volume} and play {blend}"
+          ]
+        },
+        {
+          "name": "TuneAttributeIntent",
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "samples": [
+                "{tuneable}",
+                "Set {tuneable}",
+                "Change {tuneable}",
+                "Tune {tuneable}"
+              ]
+            },
+            {
+              "name": "tuneableValue",
+              "type": "AMAZON.NUMBER",
+              "samples": [
+                "Change to {tuneableValue}",
+                "Set it to {tuneableValue}",
+                "Set to {tuneableValue}",
+                "To {tuneableValue}",
+                "Tune to {tuneableValue}",
+                "{tuneableValue}"
+              ]
+            }
+          ],
+          "samples": [
+            "Change the {tuneable} to {tuneableValue}",
+            "Change {tuneable} to {tuneableValue}",
+            "Move the {tuneable} to {tuneableValue}",
+            "Move {tuneable} to {tuneableValue}",
+            "Set the {tuneable} to {tuneableValue}",
+            "Set {tuneable} to {tuneableValue}",
+            "{tuneable} to {tuneableValue}"
+          ]
+        },
+        {
+          "name": "IncreaseTuneableAttributeIntent",
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "samples": [
+                "Higher {tuneable}",
+                "Increase the {tuneable}",
+                "Increase {tuneable}",
+                "More {tuneable}",
+                "{tuneable}"
+              ]
+            }
+          ],
+          "samples": [
+            "Add more {tuneable} music",
+            "Add more {tuneable} songs",
+            "Add more {tuneable}",
+            "Add some {tuneable} music",
+            "Add some {tuneable} songs",
+            "Add some {tuneable}",
+            "Give me some {tuneable} music",
+            "Give me some {tuneable} songs",
+            "Give me some {tuneable}",
+            "I like more {tuneable} music",
+            "I like more {tuneable} songs",
+            "I like more {tuneable}",
+            "I like {tuneable} music",
+            "I like {tuneable} songs",
+            "I like {tuneable}",
+            "I need more {tuneable} music",
+            "I need more {tuneable} songs",
+            "I need more {tuneable}",
+            "I need some {tuneable} music",
+            "I need some {tuneable} songs",
+            "I need some {tuneable}",
+            "I want more {tuneable} music",
+            "I want more {tuneable} songs",
+            "I want more {tuneable}",
+            "I want some {tuneable} music",
+            "I want some {tuneable} songs",
+            "I want some {tuneable}",
+            "I would like more {tuneable} music",
+            "I would like more {tuneable} songs",
+            "I would like more {tuneable}",
+            "I would like some {tuneable} music",
+            "I would like some {tuneable} songs",
+            "I would like some {tuneable}",
+            "I would like to hear more {tuneable} music",
+            "I would like to hear more {tuneable} songs",
+            "I would like to hear more {tuneable}",
+            "I would like to hear some {tuneable} music",
+            "I would like to hear some {tuneable} songs",
+            "I would like to hear some {tuneable}",
+            "I'd like more {tuneable} music",
+            "I'd like more {tuneable} songs",
+            "I'd like more {tuneable}",
+            "I'd like some {tuneable} music",
+            "I'd like some {tuneable} songs",
+            "I'd like some {tuneable}",
+            "I'd like to hear more {tuneable} music",
+            "I'd like to hear more {tuneable} songs",
+            "I'd like to hear more {tuneable}",
+            "I'd like to hear some {tuneable} music",
+            "I'd like to hear some {tuneable} songs",
+            "I'd like to hear some {tuneable}",
+            "Increase the {tuneable}",
+            "Increase {tuneable}",
+            "Make it more {tuneable}",
+            "More {tuneable} music",
+            "More {tuneable} songs",
+            "More {tuneable}",
+            "Put some {tuneable} in it",
+            "Put some {tuneable} in",
+            "Put some {tuneable}",
+            "Turn up the {tuneable}",
+            "Turn up {tuneable}"
+          ]
+        },
+        {
+          "name": "DecreaseTuneableAttributeIntent",
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "samples": [
+                "Decrease the {tuneable}",
+                "Decrease {tuneable}",
+                "Less {tuneable}",
+                "Lower the {tuneable}",
+                "Lower {tuneable}",
+                "{tuneable}"
+              ]
+            }
+          ],
+          "samples": [
+            "Decrease the {tuneable}",
+            "Decrease {tuneable}",
+            "Drop some {tuneable}",
+            "Give me less {tuneable} music",
+            "Give me less {tuneable}",
+            "I don't like {tuneable} music",
+            "I don't like {tuneable} songs",
+            "I don't like {tuneable}",
+            "I like less {tuneable} music",
+            "I like less {tuneable} songs",
+            "I like less {tuneable}",
+            "I need less {tuneable} music",
+            "I need less {tuneable} songs",
+            "I need less {tuneable}",
+            "I want less {tuneable} music",
+            "I want less {tuneable} songs",
+            "I want less {tuneable}",
+            "I would like less {tuneable} music",
+            "I would like less {tuneable} songs",
+            "I would like less {tuneable}",
+            "I'd like less {tuneable} music",
+            "I'd like less {tuneable} songs",
+            "I'd like less {tuneable}",
+            "Less {tuneable} music",
+            "Less {tuneable} songs",
+            "Less {tuneable}",
+            "Lower the {tuneable}",
+            "Lower {tuneable}",
+            "Make it less {tuneable}",
+            "Remove some {tuneable}",
+            "Take out some {tuneable}",
+            "Turn down the {tuneable}",
+            "Turn down {tuneable}"
+          ]
+        },
+        {
+          "name": "MinTuneableAttributeIntent",
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "samples": [
+                "{tuneable}",
+                "Set {tuneable}",
+                "Change {tuneable}",
+                "Tune {tuneable}",
+                "Lower {tuneable}"
+              ]
+            }
+          ],
+          "samples": [
+            "Crank down the {tuneable}",
+            "Crank down {tuneable}",
+            "Drop the {tuneable}",
+            "I don't need {tuneable} music",
+            "I don't need {tuneable} songs",
+            "I don't need {tuneable}",
+            "I don't want {tuneable} music",
+            "I don't want {tuneable} songs",
+            "I don't want {tuneable}",
+            "Minimum {tuneable}",
+            "Remove the {tuneable}",
+            "Remove {tuneable}",
+            "Take out the {tuneable}",
+            "Take out {tuneable}"
+          ]
+        },
+        {
+          "name": "MaxTuneableAttributeIntent",
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "samples": [
+                "{tuneable}",
+                "Set {tuneable}",
+                "Change {tuneable}",
+                "Tune {tuneable}",
+                "Up the {tuneable}"
+              ]
+            }
+          ],
+          "samples": [
+            "Crank up the {tuneable}",
+            "Crank up {tuneable}",
+            "Give me {tuneable}",
+            "I need {tuneable} music",
+            "I need {tuneable} songs",
+            "I need {tuneable}",
+            "I want to {tuneable}",
+            "I want {tuneable}",
+            "Make it {tuneable}",
+            "Make the music {tuneable}",
+            "Make the songs {tuneable}",
+            "Max the {tuneable}",
+            "Max {tuneable}",
+            "Maximum {tuneable}"
+          ]
+        },
+        {
+          "name": "ResetTuneableAttributeIntent",
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "samples": [
+                "{tuneable}",
+                "Reset {tuneable}",
+                "Change {tuneable}",
+                "Tune {tuneable}"
+              ]
+            }
+          ],
+          "samples": [
+            "Reset the {tuneable}",
+            "Reset {tuneable}",
+            "Reset tuning for {tuneable}"
+          ]
+        },
+        {
+          "name": "ResetTuneableAttributesIntent",
+          "slots": [],
+          "samples": [
+            "Reset tuneables",
+            "Reset tuning",
+            "Reset",
+            "Reset tuneable attributes",
+            "Reset attributes"
+          ]
+        },
+        {
+          "name": "PlayRadioArtistIntent",
+          "slots": [
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "volume_percent",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "artists",
+              "type": "AMAZON.Artist",
+              "samples": [
+                "Based on artists like {artists}",
+                "Based on artists {artists}",
+                "Based on {artists}",
+                "Like {artists}",
+                "Similar to {artists}",
+                "Something based on artists like {artists}",
+                "Something based on artists {artists}",
+                "Something based on {artists}",
+                "Something like {artists}",
+                "Something similar to {artists}",
+                "{artists}"
+              ]
+            }
+          ],
+          "samples": [
+            "Play music based on artists like {artists} at {volume_percent} percent volume",
+            "Play music based on artists like {artists} at {volume_percent} percent",
+            "Play music based on artists like {artists}",
+            "Play music based on artists {artists} at {volume_percent} percent volume",
+            "Play music based on artists {artists} at {volume_percent} percent",
+            "Play music based on artists {artists}",
+            "Play music based on {artists} at {volume_percent} percent volume",
+            "Play music based on {artists} at {volume_percent} percent",
+            "Play music based on {artists}",
+            "Play music like {artists} at {volume_percent} percent volume",
+            "Play music like {artists} at {volume_percent} percent",
+            "Play music like {artists}",
+            "Play music similar to {artists} at {volume_percent} percent volume",
+            "Play music similar to {artists} at {volume_percent} percent",
+            "Play music similar to {artists}",
+            "Play radio based on artists like {artists} at {volume_percent} percent volume",
+            "Play radio based on artists like {artists} at {volume_percent} percent",
+            "Play radio based on artists like {artists}",
+            "Play radio based on artists {artists} at {volume_percent} percent volume",
+            "Play radio based on artists {artists} at {volume_percent} percent",
+            "Play radio based on artists {artists}",
+            "Play radio based on {artists} at {volume_percent} percent volume",
+            "Play radio based on {artists} at {volume_percent} percent",
+            "Play radio based on {artists}",
+            "Play something based on artists like {artists} at {volume_percent} percent volume",
+            "Play something based on artists like {artists} at {volume_percent} percent",
+            "Play something based on artists like {artists}",
+            "Play something based on artists {artists} at {volume_percent} percent volume",
+            "Play something based on artists {artists} at {volume_percent} percent",
+            "Play something based on artists {artists}",
+            "Play something based on {artists} at {volume_percent} percent volume",
+            "Play something based on {artists} at {volume_percent} percent",
+            "Play something based on {artists}",
+            "Play something like {artists} at {volume_percent} percent volume",
+            "Play something like {artists} at {volume_percent} percent",
+            "Play something like {artists}",
+            "Play something similar to {artists} at {volume_percent} percent volume",
+            "Play something similar to {artists} at {volume_percent} percent",
+            "Play something similar to {artists}",
+            "Play songs based on artists like {artists} at {volume_percent} percent volume",
+            "Play songs based on artists like {artists} at {volume_percent} percent",
+            "Play songs based on artists like {artists}",
+            "Play songs based on artists {artists} at {volume_percent} percent volume",
+            "Play songs based on artists {artists} at {volume_percent} percent",
+            "Play songs based on artists {artists}",
+            "Play songs based on {artists} at {volume_percent} percent volume",
+            "Play songs based on {artists} at {volume_percent} percent",
+            "Play songs based on {artists}",
+            "Play songs like {artists} at {volume_percent} percent volume",
+            "Play songs like {artists} at {volume_percent} percent",
+            "Play songs like {artists}",
+            "Play songs similar to {artists} at {volume_percent} percent volume",
+            "Play songs similar to {artists} at {volume_percent} percent",
+            "Play songs similar to {artists}",
+            "Play {artists} artist radio at {volume_percent} percent volume",
+            "Play {artists} artist radio at {volume_percent} percent",
+            "Play {artists} artist radio",
+            "Play {artists} radio at {volume_percent} percent volume",
+            "Play {artists} radio at {volume_percent} percent",
+            "Play {artists} radio",
+            "Set volume to {volume_percent} percent and play music based on artists like {artists}",
+            "Set volume to {volume_percent} percent and play music based on artists {artists}",
+            "Set volume to {volume_percent} percent and play music based on {artists}",
+            "Set volume to {volume_percent} percent and play music like {artists}",
+            "Set volume to {volume_percent} percent and play music similar to {artists}",
+            "Set volume to {volume_percent} percent and play radio based on artists like {artists}",
+            "Set volume to {volume_percent} percent and play radio based on artists {artists}",
+            "Set volume to {volume_percent} percent and play radio based on {artists}",
+            "Set volume to {volume_percent} percent and play something based on artists like {artists}",
+            "Set volume to {volume_percent} percent and play something based on artists {artists}",
+            "Set volume to {volume_percent} percent and play something based on {artists}",
+            "Set volume to {volume_percent} percent and play something like {artists}",
+            "Set volume to {volume_percent} percent and play something similar to {artists}",
+            "Set volume to {volume_percent} percent and play songs based on artists like {artists}",
+            "Set volume to {volume_percent} percent and play songs based on artists {artists}",
+            "Set volume to {volume_percent} percent and play songs based on {artists}",
+            "Set volume to {volume_percent} percent and play songs like {artists}",
+            "Set volume to {volume_percent} percent and play songs similar to {artists}",
+            "Set volume to {volume_percent} percent and play {artists} artist radio",
+            "Set volume to {volume_percent} percent and play {artists} radio",
+            "Set volume to {volume} and play music based on artists like {artists}",
+            "Set volume to {volume} and play music based on artists {artists}",
+            "Set volume to {volume} and play music based on {artists}",
+            "Set volume to {volume} and play music like {artists}",
+            "Set volume to {volume} and play music similar to {artists}",
+            "Set volume to {volume} and play radio based on artists like {artists}",
+            "Set volume to {volume} and play radio based on artists {artists}",
+            "Set volume to {volume} and play radio based on {artists}",
+            "Set volume to {volume} and play something based on artists like {artists}",
+            "Set volume to {volume} and play something based on artists {artists}",
+            "Set volume to {volume} and play something based on {artists}",
+            "Set volume to {volume} and play something like {artists}",
+            "Set volume to {volume} and play something similar to {artists}",
+            "Set volume to {volume} and play songs based on artists like {artists}",
+            "Set volume to {volume} and play songs based on artists {artists}",
+            "Set volume to {volume} and play songs based on {artists}",
+            "Set volume to {volume} and play songs like {artists}",
+            "Set volume to {volume} and play songs similar to {artists}",
+            "Set volume to {volume} and play {artists} artist radio",
+            "Set volume to {volume} and play {artists} radio"
+          ]
+        },
+        {
+          "name": "PlayRadioTrackIntent",
+          "slots": [
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "volume_percent",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "tracks",
+              "type": "AMAZON.MusicRecording",
+              "samples": [
+                "Based on tracks like {tracks}",
+                "Based on tracks {tracks}",
+                "Based on {tracks}",
+                "Like {tracks}",
+                "Similar to {tracks}",
+                "Something based on tracks like {tracks}",
+                "Something based on tracks {tracks}",
+                "Something based on {tracks}",
+                "Something like {tracks}",
+                "Something similar to {tracks}",
+                "{tracks}"
+              ]
+            }
+          ],
+          "samples": [
+            "Play music based on tracks like {tracks} at {volume_percent} percent volume",
+            "Play music based on tracks like {tracks} at {volume_percent} percent",
+            "Play music based on tracks like {tracks}",
+            "Play music based on tracks {tracks} at {volume_percent} percent volume",
+            "Play music based on tracks {tracks} at {volume_percent} percent",
+            "Play music based on tracks {tracks}",
+            "Play music based on {tracks} at {volume_percent} percent volume",
+            "Play music based on {tracks} at {volume_percent} percent",
+            "Play music based on {tracks}",
+            "Play music like {tracks} at {volume_percent} percent volume",
+            "Play music like {tracks} at {volume_percent} percent",
+            "Play music like {tracks}",
+            "Play music similar to {tracks} at {volume_percent} percent volume",
+            "Play music similar to {tracks} at {volume_percent} percent",
+            "Play music similar to {tracks}",
+            "Play radio based on tracks like {tracks} at {volume_percent} percent volume",
+            "Play radio based on tracks like {tracks} at {volume_percent} percent",
+            "Play radio based on tracks like {tracks}",
+            "Play radio based on tracks {tracks} at {volume_percent} percent volume",
+            "Play radio based on tracks {tracks} at {volume_percent} percent",
+            "Play radio based on tracks {tracks}",
+            "Play radio based on {tracks} at {volume_percent} percent volume",
+            "Play radio based on {tracks} at {volume_percent} percent",
+            "Play radio based on {tracks}",
+            "Play something based on tracks like {tracks} at {volume_percent} percent volume",
+            "Play something based on tracks like {tracks} at {volume_percent} percent",
+            "Play something based on tracks like {tracks}",
+            "Play something based on tracks {tracks} at {volume_percent} percent volume",
+            "Play something based on tracks {tracks} at {volume_percent} percent",
+            "Play something based on tracks {tracks}",
+            "Play something based on {tracks} at {volume_percent} percent volume",
+            "Play something based on {tracks} at {volume_percent} percent",
+            "Play something based on {tracks}",
+            "Play something like {tracks} at {volume_percent} percent volume",
+            "Play something like {tracks} at {volume_percent} percent",
+            "Play something like {tracks}",
+            "Play something similar to {tracks} at {volume_percent} percent volume",
+            "Play something similar to {tracks} at {volume_percent} percent",
+            "Play something similar to {tracks}",
+            "Play songs based on tracks like {tracks} at {volume_percent} percent volume",
+            "Play songs based on tracks like {tracks} at {volume_percent} percent",
+            "Play songs based on tracks like {tracks}",
+            "Play songs based on tracks {tracks} at {volume_percent} percent volume",
+            "Play songs based on tracks {tracks} at {volume_percent} percent",
+            "Play songs based on tracks {tracks}",
+            "Play songs based on {tracks} at {volume_percent} percent volume",
+            "Play songs based on {tracks} at {volume_percent} percent",
+            "Play songs based on {tracks}",
+            "Play songs like {tracks} at {volume_percent} percent volume",
+            "Play songs like {tracks} at {volume_percent} percent",
+            "Play songs like {tracks}",
+            "Play songs similar to {tracks} at {volume_percent} percent volume",
+            "Play songs similar to {tracks} at {volume_percent} percent",
+            "Play songs similar to {tracks}",
+            "Play {tracks} radio at {volume_percent} percent volume",
+            "Play {tracks} radio at {volume_percent} percent",
+            "Play {tracks} radio",
+            "Play {tracks} track radio at {volume_percent} percent volume",
+            "Play {tracks} track radio at {volume_percent} percent",
+            "Play {tracks} track radio",
+            "Set volume to {volume_percent} percent and play music based on tracks like {tracks}",
+            "Set volume to {volume_percent} percent and play music based on tracks {tracks}",
+            "Set volume to {volume_percent} percent and play music based on {tracks}",
+            "Set volume to {volume_percent} percent and play music like {tracks}",
+            "Set volume to {volume_percent} percent and play music similar to {tracks}",
+            "Set volume to {volume_percent} percent and play radio based on tracks like {tracks}",
+            "Set volume to {volume_percent} percent and play radio based on tracks {tracks}",
+            "Set volume to {volume_percent} percent and play radio based on {tracks}",
+            "Set volume to {volume_percent} percent and play something based on tracks like {tracks}",
+            "Set volume to {volume_percent} percent and play something based on tracks {tracks}",
+            "Set volume to {volume_percent} percent and play something based on {tracks}",
+            "Set volume to {volume_percent} percent and play something like {tracks}",
+            "Set volume to {volume_percent} percent and play something similar to {tracks}",
+            "Set volume to {volume_percent} percent and play songs based on tracks like {tracks}",
+            "Set volume to {volume_percent} percent and play songs based on tracks {tracks}",
+            "Set volume to {volume_percent} percent and play songs based on {tracks}",
+            "Set volume to {volume_percent} percent and play songs like {tracks}",
+            "Set volume to {volume_percent} percent and play songs similar to {tracks}",
+            "Set volume to {volume_percent} percent and play {tracks} radio",
+            "Set volume to {volume_percent} percent and play {tracks} track radio",
+            "Set volume to {volume} and play music based on tracks like {tracks}",
+            "Set volume to {volume} and play music based on tracks {tracks}",
+            "Set volume to {volume} and play music based on {tracks}",
+            "Set volume to {volume} and play music like {tracks}",
+            "Set volume to {volume} and play music similar to {tracks}",
+            "Set volume to {volume} and play radio based on tracks like {tracks}",
+            "Set volume to {volume} and play radio based on tracks {tracks}",
+            "Set volume to {volume} and play radio based on {tracks}",
+            "Set volume to {volume} and play something based on tracks like {tracks}",
+            "Set volume to {volume} and play something based on tracks {tracks}",
+            "Set volume to {volume} and play something based on {tracks}",
+            "Set volume to {volume} and play something like {tracks}",
+            "Set volume to {volume} and play something similar to {tracks}",
+            "Set volume to {volume} and play songs based on tracks like {tracks}",
+            "Set volume to {volume} and play songs based on tracks {tracks}",
+            "Set volume to {volume} and play songs based on {tracks}",
+            "Set volume to {volume} and play songs like {tracks}",
+            "Set volume to {volume} and play songs similar to {tracks}",
+            "Set volume to {volume} and play {tracks} radio",
+            "Set volume to {volume} and play {tracks} track radio"
+          ]
+        },
+        {
+          "name": "PlayRadioGenreIntent",
+          "slots": [
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "volume_percent",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "genres",
+              "type": "AMAZON.Genre",
+              "samples": [
+                "Based on genres like {genres}",
+                "Based on genres {genres}",
+                "Based on {genres}",
+                "Like {genres}",
+                "Similar to {genres}",
+                "Something based on genres like {genres}",
+                "Something based on genres {genres}",
+                "Something based on {genres}",
+                "Something like {genres}",
+                "Something similar to {genres}",
+                "{genres}"
+              ]
+            }
+          ],
+          "samples": [
+            "Play music based on genres like {genres} at {volume_percent} percent volume",
+            "Play music based on genres like {genres} at {volume_percent} percent",
+            "Play music based on genres like {genres}",
+            "Play music based on genres {genres} at {volume_percent} percent volume",
+            "Play music based on genres {genres} at {volume_percent} percent",
+            "Play music based on genres {genres}",
+            "Play music based on {genres} at {volume_percent} percent volume",
+            "Play music based on {genres} at {volume_percent} percent",
+            "Play music based on {genres}",
+            "Play music like {genres} at {volume_percent} percent volume",
+            "Play music like {genres} at {volume_percent} percent",
+            "Play music like {genres}",
+            "Play music similar to {genres} at {volume_percent} percent volume",
+            "Play music similar to {genres} at {volume_percent} percent",
+            "Play music similar to {genres}",
+            "Play radio based on genres like {genres} at {volume_percent} percent volume",
+            "Play radio based on genres like {genres} at {volume_percent} percent",
+            "Play radio based on genres like {genres}",
+            "Play radio based on genres {genres} at {volume_percent} percent volume",
+            "Play radio based on genres {genres} at {volume_percent} percent",
+            "Play radio based on genres {genres}",
+            "Play radio based on {genres} at {volume_percent} percent volume",
+            "Play radio based on {genres} at {volume_percent} percent",
+            "Play radio based on {genres}",
+            "Play something based on genres like {genres} at {volume_percent} percent volume",
+            "Play something based on genres like {genres} at {volume_percent} percent",
+            "Play something based on genres like {genres}",
+            "Play something based on genres {genres} at {volume_percent} percent volume",
+            "Play something based on genres {genres} at {volume_percent} percent",
+            "Play something based on genres {genres}",
+            "Play something based on {genres} at {volume_percent} percent volume",
+            "Play something based on {genres} at {volume_percent} percent",
+            "Play something based on {genres}",
+            "Play something like {genres} at {volume_percent} percent volume",
+            "Play something like {genres} at {volume_percent} percent",
+            "Play something like {genres}",
+            "Play something similar to {genres} at {volume_percent} percent volume",
+            "Play something similar to {genres} at {volume_percent} percent",
+            "Play something similar to {genres}",
+            "Play songs based on genres like {genres} at {volume_percent} percent volume",
+            "Play songs based on genres like {genres} at {volume_percent} percent",
+            "Play songs based on genres like {genres}",
+            "Play songs based on genres {genres} at {volume_percent} percent volume",
+            "Play songs based on genres {genres} at {volume_percent} percent",
+            "Play songs based on genres {genres}",
+            "Play songs based on {genres} at {volume_percent} percent volume",
+            "Play songs based on {genres} at {volume_percent} percent",
+            "Play songs based on {genres}",
+            "Play songs like {genres} at {volume_percent} percent volume",
+            "Play songs like {genres} at {volume_percent} percent",
+            "Play songs like {genres}",
+            "Play songs similar to {genres} at {volume_percent} percent volume",
+            "Play songs similar to {genres} at {volume_percent} percent",
+            "Play songs similar to {genres}",
+            "Play {genres} genre radio at {volume_percent} percent volume",
+            "Play {genres} genre radio at {volume_percent} percent",
+            "Play {genres} genre radio",
+            "Play {genres} radio at {volume_percent} percent volume",
+            "Play {genres} radio at {volume_percent} percent",
+            "Play {genres} radio",
+            "Play a {genres} genre radio at {volume_percent} percent volume",
+            "Play a {genres} genre radio at {volume_percent} percent",
+            "Play a {genres} genre radio",
+            "Play a {genres} radio at {volume_percent} percent volume",
+            "Play a {genres} radio at {volume_percent} percent",
+            "Play a {genres} radio",
+            "Play the {genres} genre radio at {volume_percent} percent volume",
+            "Play the {genres} genre radio at {volume_percent} percent",
+            "Play the {genres} genre radio",
+            "Play the {genres} radio at {volume_percent} percent volume",
+            "Play the {genres} radio at {volume_percent} percent",
+            "Play the {genres} radio",
+            "Set volume to {volume_percent} percent and play music based on genres like {genres}",
+            "Set volume to {volume_percent} percent and play music based on genres {genres}",
+            "Set volume to {volume_percent} percent and play music based on {genres}",
+            "Set volume to {volume_percent} percent and play music like {genres}",
+            "Set volume to {volume_percent} percent and play music similar to {genres}",
+            "Set volume to {volume_percent} percent and play radio based on genres like {genres}",
+            "Set volume to {volume_percent} percent and play radio based on genres {genres}",
+            "Set volume to {volume_percent} percent and play radio based on {genres}",
+            "Set volume to {volume_percent} percent and play something based on genres like {genres}",
+            "Set volume to {volume_percent} percent and play something based on genres {genres}",
+            "Set volume to {volume_percent} percent and play something based on {genres}",
+            "Set volume to {volume_percent} percent and play something like {genres}",
+            "Set volume to {volume_percent} percent and play something similar to {genres}",
+            "Set volume to {volume_percent} percent and play songs based on genres like {genres}",
+            "Set volume to {volume_percent} percent and play songs based on genres {genres}",
+            "Set volume to {volume_percent} percent and play songs based on {genres}",
+            "Set volume to {volume_percent} percent and play songs like {genres}",
+            "Set volume to {volume_percent} percent and play songs similar to {genres}",
+            "Set volume to {volume_percent} percent and play {genres} genre radio",
+            "Set volume to {volume_percent} percent and play {genres} radio",
+            "Set volume to {volume} and play music based on genres like {genres}",
+            "Set volume to {volume} and play music based on genres {genres}",
+            "Set volume to {volume} and play music based on {genres}",
+            "Set volume to {volume} and play music like {genres}",
+            "Set volume to {volume} and play music similar to {genres}",
+            "Set volume to {volume} and play radio based on genres like {genres}",
+            "Set volume to {volume} and play radio based on genres {genres}",
+            "Set volume to {volume} and play radio based on {genres}",
+            "Set volume to {volume} and play something based on genres like {genres}",
+            "Set volume to {volume} and play something based on genres {genres}",
+            "Set volume to {volume} and play something based on {genres}",
+            "Set volume to {volume} and play something like {genres}",
+            "Set volume to {volume} and play something similar to {genres}",
+            "Set volume to {volume} and play songs based on genres like {genres}",
+            "Set volume to {volume} and play songs based on genres {genres}",
+            "Set volume to {volume} and play songs based on {genres}",
+            "Set volume to {volume} and play songs like {genres}",
+            "Set volume to {volume} and play songs similar to {genres}",
+            "Set volume to {volume} and play {genres} genre radio",
+            "Set volume to {volume} and play {genres} radio"
+          ]
+        },
+        {
+          "name": "DislikeIntent",
+          "slots": [
+            {
+              "name": "thing",
+              "type": "MUSIC_THING"
+            },
+            {
+              "name": "artist",
+              "type": "AMAZON.Artist"
+            }
+          ],
+          "samples": [
+            "Dislike {artist}",
+            "Dislike",
+            "Dislike this",
+            "Dislike this {thing}",
+            "Stop playing this",
+            "Stop playing this {thing}",
+            "Never play this",
+            "Never play this {thing}",
+            "Never play this {thing} again",
+            "Filter this {thing}",
+            "Filter this",
+            "Filter {artist}",
+            "I dislike the {thing}",
+            "I dislike this {thing}",
+            "I dislike this",
+            "I dislike {artist}",
+            "I don't like the {thing}",
+            "I don't like this {thing}",
+            "I don't like this",
+            "I don't like {artist}",
+            "I hate the {thing}",
+            "I hate this {thing}",
+            "I hate this",
+            "I hate {artist}",
+            "The {thing} sucks",
+            "This {thing} sucks",
+            "Thumbs down",
+            "What the heck is this",
+            "What the hell is this"
+          ]
+        },
+        {
+          "name": "PlayRandomIntent",
+          "slots": [
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "volume_percent",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "Just play at {volume_percent} percent volume",
+            "Just play at {volume_percent} percent",
+            "Just play something at {volume_percent} percent volume",
+            "Just play something at {volume_percent} percent",
+            "Just play something",
+            "Just play",
+            "Play at {volume_percent} percent volume",
+            "Play at {volume_percent} percent",
+            "Play awesome music at {volume_percent} percent volume",
+            "Play awesome music at {volume_percent} percent",
+            "Play awesome music",
+            "Play music I like at {volume_percent} percent volume",
+            "Play music I like at {volume_percent} percent",
+            "Play music I like",
+            "Play random music I like at {volume_percent} percent volume",
+            "Play random music I like at {volume_percent} percent",
+            "Play random music I like",
+            "Play some awesome music at {volume_percent} percent volume",
+            "Play some awesome music at {volume_percent} percent",
+            "Play some awesome music",
+            "Play some music at {volume_percent} percent volume",
+            "Play some music at {volume_percent} percent",
+            "Play some music I like at {volume_percent} percent volume",
+            "Play some music I like at {volume_percent} percent",
+            "Play some music I like",
+            "Play some music",
+            "Play something at {volume_percent} percent volume",
+            "Play something at {volume_percent} percent",
+            "Play something cool at {volume_percent} percent volume",
+            "Play something cool at {volume_percent} percent",
+            "Play something cool",
+            "Play something good at {volume_percent} percent volume",
+            "Play something good at {volume_percent} percent",
+            "Play something good",
+            "Play something nice at {volume_percent} percent volume",
+            "Play something nice at {volume_percent} percent",
+            "Play something nice",
+            "Play something random at {volume_percent} percent volume",
+            "Play something random at {volume_percent} percent",
+            "Play something random",
+            "Play something",
+            "Play",
+            "Set volume to {volume_percent} percent and just play something",
+            "Set volume to {volume_percent} percent and just play",
+            "Set volume to {volume_percent} percent and play awesome music",
+            "Set volume to {volume_percent} percent and play music I like",
+            "Set volume to {volume_percent} percent and play random music I like",
+            "Set volume to {volume_percent} percent and play some awesome music",
+            "Set volume to {volume_percent} percent and play some music I like",
+            "Set volume to {volume_percent} percent and play some music",
+            "Set volume to {volume_percent} percent and play something cool",
+            "Set volume to {volume_percent} percent and play something good",
+            "Set volume to {volume_percent} percent and play something nice",
+            "Set volume to {volume_percent} percent and play something random",
+            "Set volume to {volume_percent} percent and play something",
+            "Set volume to {volume_percent} percent and play",
+            "Set volume to {volume_percent} percent and surprise me",
+            "Set volume to {volume} and just play something",
+            "Set volume to {volume} and just play",
+            "Set volume to {volume} and play awesome music",
+            "Set volume to {volume} and play music I like",
+            "Set volume to {volume} and play random music I like",
+            "Set volume to {volume} and play some awesome music",
+            "Set volume to {volume} and play some music I like",
+            "Set volume to {volume} and play some music",
+            "Set volume to {volume} and play something cool",
+            "Set volume to {volume} and play something good",
+            "Set volume to {volume} and play something nice",
+            "Set volume to {volume} and play something random",
+            "Set volume to {volume} and play something",
+            "Set volume to {volume} and play",
+            "Set volume to {volume} and surprise me",
+            "Surprise me at {volume_percent} percent volume",
+            "Surprise me at {volume_percent} percent",
+            "Surprise me"
+          ]
+        },
+        {
+          "name": "ListTuneablesIntent",
+          "slots": [],
+          "samples": [
+            "Give me a list of attributes",
+            "Give me a list of tuneable attributes",
+            "Give me a list of tuneables",
+            "How can I tune my music",
+            "How can I tune",
+            "List attributes",
+            "List tuneable attributes",
+            "List tuneables",
+            "Tell me a list of attributes",
+            "Tell me a list of tuneable attributes",
+            "Tell me a list of tuneables",
+            "Tell me what can I tune",
+            "What can I change",
+            "What can I tune"
+          ]
+        },
+        {
+          "name": "ListTuningIntent",
+          "slots": [],
+          "samples": [
+            "How is it tuned",
+            "How is my music tuned",
+            "How is the music tuned",
+            "List the tuning",
+            "Read me the tuning",
+            "Read the tuning",
+            "Show me the tuning",
+            "Show the tuning",
+            "Tell me the tuning",
+            "Tell the tuning",
+            "What is my tuning",
+            "What is the tuning",
+            "What's my tuning",
+            "What's the tuning"
+          ]
+        },
+        {
+          "name": "LikeIntent",
+          "slots": [],
+          "samples": [
+            "Add this song to my favourites",
+            "Add this song to my library",
+            "Add this song to my music",
+            "Add this song to my songs",
+            "Add this song",
+            "Add this to my favourites",
+            "Add this to my library",
+            "Add this to my music",
+            "Add this to my songs",
+            "Add this track to my favourites",
+            "Add this track to my library",
+            "Add this track to my music",
+            "Add this track to my songs",
+            "Add this track",
+            "I like this song",
+            "I like this track",
+            "I like this",
+            "I love this song",
+            "I love this track",
+            "I love this",
+            "Save this song to my favourites",
+            "Save this song to my library",
+            "Save this song to my music",
+            "Save this song to my songs",
+            "Save this song",
+            "Save this to my favourites",
+            "Save this to my library",
+            "Save this to my music",
+            "Save this to my songs",
+            "Save this track to my favourites",
+            "Save this track to my library",
+            "Save this track to my music",
+            "Save this track to my songs",
+            "Save this track",
+            "Save this"
+          ]
+        },
+        {
+          "name": "FadeDownIntent",
+          "slots": [
+            {
+              "name": "duration",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "Set a sleep timer for {duration} minute",
+            "Set a sleep timer for {duration} minutes",
+            "Set sleep timer for {duration} minute",
+            "Set sleep timer for {duration} minutes",
+            "Sleep timer for {duration} minute",
+            "Sleep timer for {duration} minutes",
+            "Start a sleep timer for {duration} minute",
+            "Start a sleep timer for {duration} minutes",
+            "Start a sleep timer",
+            "Start sleep timer for {duration} minute",
+            "Start sleep timer for {duration} minutes",
+            "Start sleep timer",
+            "Stop playing in {duration} minute",
+            "Stop playing in {duration} minutes",
+            "Stop the music in {duration} minute",
+            "Stop the music in {duration} minutes",
+            "Wind down in {duration} minute",
+            "Wind down in {duration} minutes"
+          ]
+        },
+        {
+          "name": "FadeUpIntent",
+          "slots": [
+            {
+              "name": "duration",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "Ramp it up",
+            "Ramp it up for {duration} minutes",
+            "Ramp it up for {duration} minute"
+          ]
+        },
+        {
+          "name": "FadeIntent",
+          "slots": [
+            {
+              "name": "direction",
+              "type": "DIRECTION",
+              "samples": [
+                "fade it {direction}",
+                "fade the volume {direction}",
+                "fade volume {direction}",
+                "fade {direction}",
+                "{direction}"
+              ]
+            },
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "duration",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "Fade it {direction} for {duration} minute to {volume} percent",
+            "Fade it {direction} for {duration} minute until {volume} percent",
+            "Fade it {direction} for {duration} minute",
+            "Fade it {direction} for {duration} minutes to {volume} percent",
+            "Fade it {direction} for {duration} minutes until {volume} percent",
+            "Fade it {direction} for {duration} minutes",
+            "Fade it {direction} in {duration} minute to {volume} percent",
+            "Fade it {direction} in {duration} minute until {volume} percent",
+            "Fade it {direction} in {duration} minute",
+            "Fade it {direction} in {duration} minutes to {volume} percent",
+            "Fade it {direction} in {duration} minutes until {volume} percent",
+            "Fade it {direction} in {duration} minutes",
+            "Fade it {direction} to {volume} percent for {duration} minute",
+            "Fade it {direction} to {volume} percent for {duration} minutes",
+            "Fade it {direction} to {volume} percent in {duration} minute",
+            "Fade it {direction} to {volume} percent in {duration} minutes",
+            "Fade it {direction} to {volume} percent",
+            "Fade it {direction} until {volume} percent for {duration} minute",
+            "Fade it {direction} until {volume} percent for {duration} minutes",
+            "Fade it {direction} until {volume} percent in {duration} minute",
+            "Fade it {direction} until {volume} percent in {duration} minutes",
+            "Fade it {direction} until {volume} percent",
+            "Fade it {direction}",
+            "Fade music {direction} for {duration} minute to {volume} percent",
+            "Fade music {direction} for {duration} minute until {volume} percent",
+            "Fade music {direction} for {duration} minute",
+            "Fade music {direction} for {duration} minutes to {volume} percent",
+            "Fade music {direction} for {duration} minutes until {volume} percent",
+            "Fade music {direction} for {duration} minutes",
+            "Fade music {direction} in {duration} minute to {volume} percent",
+            "Fade music {direction} in {duration} minute until {volume} percent",
+            "Fade music {direction} in {duration} minute",
+            "Fade music {direction} in {duration} minutes to {volume} percent",
+            "Fade music {direction} in {duration} minutes until {volume} percent",
+            "Fade music {direction} in {duration} minutes",
+            "Fade music {direction} to {volume} percent for {duration} minute",
+            "Fade music {direction} to {volume} percent for {duration} minutes",
+            "Fade music {direction} to {volume} percent in {duration} minute",
+            "Fade music {direction} to {volume} percent in {duration} minutes",
+            "Fade music {direction} to {volume} percent",
+            "Fade music {direction} until {volume} percent for {duration} minute",
+            "Fade music {direction} until {volume} percent for {duration} minutes",
+            "Fade music {direction} until {volume} percent in {duration} minute",
+            "Fade music {direction} until {volume} percent in {duration} minutes",
+            "Fade music {direction} until {volume} percent",
+            "Fade music {direction}",
+            "Fade the music {direction} for {duration} minute to {volume} percent",
+            "Fade the music {direction} for {duration} minute until {volume} percent",
+            "Fade the music {direction} for {duration} minute",
+            "Fade the music {direction} for {duration} minutes to {volume} percent",
+            "Fade the music {direction} for {duration} minutes until {volume} percent",
+            "Fade the music {direction} for {duration} minutes",
+            "Fade the music {direction} in {duration} minute to {volume} percent",
+            "Fade the music {direction} in {duration} minute until {volume} percent",
+            "Fade the music {direction} in {duration} minute",
+            "Fade the music {direction} in {duration} minutes to {volume} percent",
+            "Fade the music {direction} in {duration} minutes until {volume} percent",
+            "Fade the music {direction} in {duration} minutes",
+            "Fade the music {direction} to {volume} percent for {duration} minute",
+            "Fade the music {direction} to {volume} percent for {duration} minutes",
+            "Fade the music {direction} to {volume} percent in {duration} minute",
+            "Fade the music {direction} to {volume} percent in {duration} minutes",
+            "Fade the music {direction} to {volume} percent",
+            "Fade the music {direction} until {volume} percent for {duration} minute",
+            "Fade the music {direction} until {volume} percent for {duration} minutes",
+            "Fade the music {direction} until {volume} percent in {duration} minute",
+            "Fade the music {direction} until {volume} percent in {duration} minutes",
+            "Fade the music {direction} until {volume} percent",
+            "Fade the music {direction}",
+            "Fade the volume {direction} for {duration} minute to {volume} percent",
+            "Fade the volume {direction} for {duration} minute until {volume} percent",
+            "Fade the volume {direction} for {duration} minute",
+            "Fade the volume {direction} for {duration} minutes to {volume} percent",
+            "Fade the volume {direction} for {duration} minutes until {volume} percent",
+            "Fade the volume {direction} for {duration} minutes",
+            "Fade the volume {direction} in {duration} minute to {volume} percent",
+            "Fade the volume {direction} in {duration} minute until {volume} percent",
+            "Fade the volume {direction} in {duration} minute",
+            "Fade the volume {direction} in {duration} minutes to {volume} percent",
+            "Fade the volume {direction} in {duration} minutes until {volume} percent",
+            "Fade the volume {direction} in {duration} minutes",
+            "Fade the volume {direction} to {volume} percent for {duration} minute",
+            "Fade the volume {direction} to {volume} percent for {duration} minutes",
+            "Fade the volume {direction} to {volume} percent in {duration} minute",
+            "Fade the volume {direction} to {volume} percent in {duration} minutes",
+            "Fade the volume {direction} to {volume} percent",
+            "Fade the volume {direction} until {volume} percent for {duration} minute",
+            "Fade the volume {direction} until {volume} percent for {duration} minutes",
+            "Fade the volume {direction} until {volume} percent in {duration} minute",
+            "Fade the volume {direction} until {volume} percent in {duration} minutes",
+            "Fade the volume {direction} until {volume} percent",
+            "Fade the volume {direction}",
+            "Fade volume {direction} for {duration} minute to {volume} percent",
+            "Fade volume {direction} for {duration} minute until {volume} percent",
+            "Fade volume {direction} for {duration} minute",
+            "Fade volume {direction} for {duration} minutes to {volume} percent",
+            "Fade volume {direction} for {duration} minutes until {volume} percent",
+            "Fade volume {direction} for {duration} minutes",
+            "Fade volume {direction} in {duration} minute to {volume} percent",
+            "Fade volume {direction} in {duration} minute until {volume} percent",
+            "Fade volume {direction} in {duration} minute",
+            "Fade volume {direction} in {duration} minutes to {volume} percent",
+            "Fade volume {direction} in {duration} minutes until {volume} percent",
+            "Fade volume {direction} in {duration} minutes",
+            "Fade volume {direction} to {volume} percent for {duration} minute",
+            "Fade volume {direction} to {volume} percent for {duration} minutes",
+            "Fade volume {direction} to {volume} percent in {duration} minute",
+            "Fade volume {direction} to {volume} percent in {duration} minutes",
+            "Fade volume {direction} to {volume} percent",
+            "Fade volume {direction} until {volume} percent for {duration} minute",
+            "Fade volume {direction} until {volume} percent for {duration} minutes",
+            "Fade volume {direction} until {volume} percent in {duration} minute",
+            "Fade volume {direction} until {volume} percent in {duration} minutes",
+            "Fade volume {direction} until {volume} percent",
+            "Fade volume {direction}",
+            "Fade {direction} for {duration} minute to {volume} percent",
+            "Fade {direction} for {duration} minute until {volume} percent",
+            "Fade {direction} for {duration} minute",
+            "Fade {direction} for {duration} minutes to {volume} percent",
+            "Fade {direction} for {duration} minutes until {volume} percent",
+            "Fade {direction} for {duration} minutes",
+            "Fade {direction} in {duration} minute to {volume} percent",
+            "Fade {direction} in {duration} minute until {volume} percent",
+            "Fade {direction} in {duration} minute",
+            "Fade {direction} in {duration} minutes to {volume} percent",
+            "Fade {direction} in {duration} minutes until {volume} percent",
+            "Fade {direction} in {duration} minutes",
+            "Fade {direction} to {volume} percent for {duration} minute",
+            "Fade {direction} to {volume} percent for {duration} minutes",
+            "Fade {direction} to {volume} percent in {duration} minute",
+            "Fade {direction} to {volume} percent in {duration} minutes",
+            "Fade {direction} to {volume} percent",
+            "Fade {direction} until {volume} percent for {duration} minute",
+            "Fade {direction} until {volume} percent for {duration} minutes",
+            "Fade {direction} until {volume} percent in {duration} minute",
+            "Fade {direction} until {volume} percent in {duration} minutes",
+            "Fade {direction} until {volume} percent",
+            "Fade {direction}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "dot",
+              "name": {
+                "value": "dot"
+              }
+            }
+          ],
+          "name": "DEVICE_NAME"
+        },
+        {
+          "values": [
+            {
+              "id": "artist",
+              "name": {
+                "value": "artist",
+                "synonyms": [
+                  "singer",
+                  "player",
+                  "guy",
+                  "girl",
+                  "man",
+                  "woman",
+                  "band"
+                ]
+              }
+            }
+          ],
+          "name": "MUSIC_THING"
+        },
+        {
+          "values": [
+            {
+              "id": "down",
+              "name": {
+                "value": "down",
+                "synonyms": [
+                  "out"
+                ]
+              }
+            },
+            {
+              "id": "up",
+              "name": {
+                "value": "up",
+                "synonyms": [
+                  "in"
+                ]
+              }
+            }
+          ],
+          "name": "DIRECTION"
+        },
+        {
+          "values": [
+            {
+              "id": "random",
+              "name": {
+                "value": "random",
+                "synonyms": [
+                  "whatever",
+                  "anything",
+                  "any"
+                ]
+              }
+            },
+            {
+              "id": "workoutHype",
+              "name": {
+                "value": "workout hype",
+                "synonyms": [
+                  "workout",
+                  "hype"
+                ]
+              }
+            },
+            {
+              "id": "deepFocus",
+              "name": {
+                "value": "deep focus",
+                "synonyms": [
+                  "deep",
+                  "focus",
+                  "study",
+                  "studying"
+                ]
+              }
+            },
+            {
+              "id": "eveningCommute",
+              "name": {
+                "value": "evening commute",
+                "synonyms": [
+                  "evening",
+                  "commute"
+                ]
+              }
+            },
+            {
+              "id": "immersiveReading",
+              "name": {
+                "value": "immersive reading",
+                "synonyms": [
+                  "immersive",
+                  "reading",
+                  "cinematic",
+                  "story"
+                ]
+              }
+            },
+            {
+              "id": "mellowDinner",
+              "name": {
+                "value": "mellow dinner",
+                "synonyms": [
+                  "mellow",
+                  "dinner"
+                ]
+              }
+            },
+            {
+              "id": "morningStroll",
+              "name": {
+                "value": "morning stroll",
+                "synonyms": [
+                  "morning",
+                  "stroll"
+                ]
+              }
+            },
+            {
+              "id": "peacefulSleep",
+              "name": {
+                "value": "peaceful sleep",
+                "synonyms": [
+                  "peaceful",
+                  "sleep"
+                ]
+              }
+            },
+            {
+              "id": "romanticNight",
+              "name": {
+                "value": "romantic night",
+                "synonyms": [
+                  "romantic",
+                  "night"
+                ]
+              }
+            }
+          ],
+          "name": "BLEND"
+        },
+        {
+          "values": [
+            {
+              "id": "acousticness",
+              "name": {
+                "value": "acousticness",
+                "synonyms": [
+                  "acoustic"
+                ]
+              }
+            },
+            {
+              "id": "reverse_acousticness",
+              "name": {
+                "value": "electronic",
+                "synonyms": [
+                  "electro",
+                  "edm",
+                  "techno",
+                  "house"
+                ]
+              }
+            },
+            {
+              "id": "danceability",
+              "name": {
+                "value": "danceability",
+                "synonyms": [
+                  "danceable",
+                  "dance",
+                  "disco",
+                  "party",
+                  "funk",
+                  "funky",
+                  "groove",
+                  "groovy",
+                  "jazzy"
+                ]
+              }
+            },
+            {
+              "id": "reverse_energy",
+              "name": {
+                "value": "mellowness",
+                "synonyms": [
+                  "low key",
+                  "mellow",
+                  "calm",
+                  "calmness",
+                  "peaceful",
+                  "peace",
+                  "peacefulness",
+                  "ambient",
+                  "ambiental",
+                  "chill",
+                  "sleep",
+                  "sleepy",
+                  "study"
+                ]
+              }
+            },
+            {
+              "id": "energy",
+              "name": {
+                "value": "energy",
+                "synonyms": [
+                  "force",
+                  "strength",
+                  "intensity",
+                  "intense",
+                  "hype",
+                  "power",
+                  "powerful",
+                  "energetic",
+                  "stronger",
+                  "strong"
+                ]
+              }
+            },
+            {
+              "id": "instrumentalness",
+              "name": {
+                "value": "instrumentalness",
+                "synonyms": [
+                  "instrumental",
+                  "instruments",
+                  "guitar",
+                  "drums"
+                ]
+              }
+            },
+            {
+              "id": "liveness",
+              "name": {
+                "value": "liveness",
+                "synonyms": [
+                  "live"
+                ]
+              }
+            },
+            {
+              "id": "reverse_liveness",
+              "name": {
+                "value": "studio",
+                "synonyms": [
+                  "intimate"
+                ]
+              }
+            },
+            {
+              "id": "loudness",
+              "name": {
+                "value": "loudness",
+                "synonyms": [
+                  "loud",
+                  "volume",
+                  "hardcore"
+                ]
+              }
+            },
+            {
+              "id": "reverse_loudness",
+              "name": {
+                "value": "quietness",
+                "synonyms": [
+                  "quiet",
+                  "silent"
+                ]
+              }
+            },
+            {
+              "id": "popularity",
+              "name": {
+                "value": "popularity",
+                "synonyms": [
+                  "popular"
+                ]
+              }
+            },
+            {
+              "id": "reverse_popularity",
+              "name": {
+                "value": "unknown",
+                "synonyms": [
+                  "unpopular",
+                  "underground"
+                ]
+              }
+            },
+            {
+              "id": "speechiness",
+              "name": {
+                "value": "speechiness",
+                "synonyms": [
+                  "words",
+                  "speech",
+                  "rap",
+                  "talk"
+                ]
+              }
+            },
+            {
+              "id": "tempo",
+              "name": {
+                "value": "tempo",
+                "synonyms": [
+                  "tempo",
+                  "faster",
+                  "fast",
+                  "beats",
+                  "bpm"
+                ]
+              }
+            },
+            {
+              "id": "reverse_tempo",
+              "name": {
+                "value": "slowness",
+                "synonyms": [
+                  "slower",
+                  "slow"
+                ]
+              }
+            },
+            {
+              "id": "valence",
+              "name": {
+                "value": "valence",
+                "synonyms": [
+                  "happiness",
+                  "happy",
+                  "upbeat"
+                ]
+              }
+            },
+            {
+              "id": "reverse_valence",
+              "name": {
+                "value": "sadness",
+                "synonyms": [
+                  "sad",
+                  "mood",
+                  "moody",
+                  "gloom",
+                  "gloomy",
+                  "rainy",
+                  "rainy day"
+                ]
+              }
+            },
+            {
+              "id": "duration_ms",
+              "name": {
+                "value": "duration",
+                "synonyms": [
+                  "longer",
+                  "long"
+                ]
+              }
+            },
+            {
+              "id": "reverse_duration_ms",
+              "name": {
+                "value": "shortness",
+                "synonyms": [
+                  "shorter",
+                  "short"
+                ]
+              }
+            }
+          ],
+          "name": "TUNEABLE_ATTRIBUTE"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "PlayBlendIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "volume_percent",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "blend",
+              "type": "BLEND",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1180074162255.1505392599979"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.1093500415482.655329980673.915112802479"
+                }
+              ]
+            },
+            {
+              "name": "device",
+              "type": "DEVICE_NAME",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "PlayRandomIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "volume_percent",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "PlayRadioArtistIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "volume_percent",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "artists",
+              "type": "AMAZON.Artist",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.751709601904.33094129816"
+              }
+            }
+          ]
+        },
+        {
+          "name": "PlayRadioTrackIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "volume_percent",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "tracks",
+              "type": "AMAZON.MusicRecording",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.751709601904.33094129816"
+              }
+            }
+          ]
+        },
+        {
+          "name": "PlayRadioGenreIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "volume_percent",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "genres",
+              "type": "AMAZON.Genre",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.751709601904.33094129816"
+              }
+            }
+          ]
+        },
+        {
+          "name": "FadeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "direction",
+              "type": "DIRECTION",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1010339292204.920805229258"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.665625734486.182276262652.277238927129"
+                }
+              ]
+            },
+            {
+              "name": "volume",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "duration",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            }
+          ]
+        },
+        {
+          "name": "IncreaseTuneableAttributeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.51905708577.1050116089477"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.51905708577.1050116089477.232424668223"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "DecreaseTuneableAttributeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.51905708577.1050116089478"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.51905708577.1050116089477.232424668223"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MaxTuneableAttributeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.51905708577.1050116089479"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.51905708577.1050116089477.232424668223"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MinTuneableAttributeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.51905708577.1050116089480"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.51905708577.1050116089477.232424668223"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TuneAttributeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.51905708577.1050116089481"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.51905708577.1050116089477.232424668223"
+                }
+              ]
+            },
+            {
+              "name": "tuneableValue",
+              "type": "AMAZON.NUMBER",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.586624243930.916392985539"
+              }
+            }
+          ]
+        },
+        {
+          "name": "ResetTuneableAttributeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "tuneable",
+              "type": "TUNEABLE_ATTRIBUTE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.51905708577.1050116089482"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.51905708577.1050116089477.232424668223"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1180074162255.1505392599979",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which Blend do you want to play?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.751709601904.33094129816",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Choose some artists, songs or genres."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1010339292204.920805229258",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "How would you like to fade the volume, up or down?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Do you want to fade up or down?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.51905708577.1050116089477",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which tuneable would you like to increase?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.51905708577.1050116089478",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which tuneable would you like to decrease?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.51905708577.1050116089479",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which tuneable would you like to set to maximum?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.51905708577.1050116089480",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which tuneable would you like to set to minimum?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.51905708577.1050116089481",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which tuneable would you like to change?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.51905708577.1050116089482",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which tuneable would you like to reset?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.51905708577.1050116089477.232424668223",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "If you want to hear a list of valid tuneables, say What can I tune. So, which tuneable would you like to change?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.586624243930.916392985539",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Say a value between zero and ten."
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.665625734486.182276262652.277238927129",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Would you like to fade up or down?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.1093500415482.655329980673.915112802479",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please specify an existing blend."
+          }
+        ]
+      }
+    ]
+  },
+  "version": "3"
+}

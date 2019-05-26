@@ -1,0 +1,8 @@
+requests
+addict
+first
+aws_xray_sdk
+ask_sdk
+fuzzywuzzy[speedup]
+stringcase
+sentry-sdk>=0.6.6

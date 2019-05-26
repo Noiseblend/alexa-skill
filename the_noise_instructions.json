@@ -1,0 +1,20 @@
+{
+    "skillId": "amzn1.ask.skill.778ceabb-38ef-47d5-8927-f57cff77bf2d",
+    "locale": "en-US",
+    "type": "text",
+    "userInput": [
+        "tell noiseblend to play my morning blend",
+        "tell noiseblend to play something based on Adele and Bruno Mars",
+        "tell noiseblend to play songs similar to Magic by Coldplay",
+        "tell noiseblend to play some chill music",
+        "tell noiseblend I like this song",
+        "tell noiseblend to play something",
+        "tell noiseblend to play something",
+        "tell noiseblend to add more acousticness",
+        "tell noiseblend to make it mellow",
+        "ask noiseblend what's the tuning",
+        "tell noiseblend I don't like this artist",
+        "tell noiseblend to fade it down for one minute",
+        "tell noiseblend to fade the music up for two minutes until eighty percent"
+    ]
+}
